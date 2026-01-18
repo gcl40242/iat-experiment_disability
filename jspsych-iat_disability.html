@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>IAT</title>
+
+  <!-- jsPsych 本体 -->
+  <script src="jspsych.js"></script>
+
+  <!-- プラグイン -->
+  <script src="plugins/jspsych-html-keyboard-response.js"></script>
+  <script src="plugins/jspsych-iat-html.js"></script>
+  <script src="plugins/jspsych-iat-html_qualtrics.js"></script>
+  <script src="plugins/jspsych-survey-text.js"></script>
+  <script src="plugins/jspsych-survey-multi-choice.js"></script>
+  <script src="plugins/jspsych-fullscreen_jp.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/jspsych.css">
+</head>
+
+<body>
+
+  <!-- 実験ロジックは body の最後 -->
+  <script src="jspsych-iat_disability.js"></script>
+
+  <script>
+    jsPsych.init({
+      timeline: timeline
+    });
+  </script>
+
+</body>
+</html>
